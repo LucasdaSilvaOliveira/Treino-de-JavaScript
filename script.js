@@ -12,6 +12,7 @@ function adicionar () {
     if(nom.length == 0 || alt.value.length == 0) {
         window.alert('Adicione nos espaços em branco')
     } else if(sexm.checked) {
+        r.innerHTML= ''
         qntsexm.push(sexm)
         var item= document.createElement('option')
         sel.appendChild(item)
