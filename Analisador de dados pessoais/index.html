@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de dados pessoais</h1>
+    </header>
+    <main>
+        <p>Nome: <input type="text" id="nome"></p>
+        <p>Altura: <input type="number" name="altura" id="altura"></p>
+        <p>Sexo: 
+            <input type="radio" name="radsex" id="masc" checked>
+            <label for="masc">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+        </p>
+        <input type="button" value="Adicionar" onclick="adicionar()">
+        
+        <p><select name="seleção" id="seleção" size="8"> <input type="button" value="Verificar" onclick="verificar()"></select></p>
+        <p id="res"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
