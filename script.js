@@ -21,6 +21,7 @@ function adicionar () {
         alt.value= ''
         nom.focus()
     } else if(sexf.checked){
+        r.innerHTML= ''
         qntsexf.push(sexf)
         var item= document.createElement('option')
         sel.appendChild(item)
